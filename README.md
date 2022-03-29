@@ -1,5 +1,11 @@
 # woff2otf
 Convert woff and woff2 files to otf 
+### Dependencies
+#### Brotli
+    
+    $ pip install brotli
+#### FontTools
+    $ pip install fonttools
 ### Usage
 for a single .woff or .woff2 file:
 
