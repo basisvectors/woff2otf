@@ -21,9 +21,13 @@ def batchconvert(source_dir, target_dir):
 
 def main(argv):
     if len(argv) == 1 or len(argv) > 3:
-        print('I convert *.woff and *.woff2 files to *.otf files.\n'
-              'Usage: python woff2otf.py filename.woff or filename.woff2 or directory for batch conversion [target file name or target directory name]\n'
-              'If the target name is omitted, it will be guessed.\n')
+        print("""usage:
+
+    python woff2otf.py [filename.woff/.woff2] [export filename:optional]
+
+or, for batch conversion:
+
+    python woff2otf.py [import directory path] [export directory path:optional]""")
         return
 
     if argv[1].endswith('.woff') or argv[1].endswith('.woff2'):
